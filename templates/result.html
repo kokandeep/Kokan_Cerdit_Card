@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div id="brandname">
+          <h1>
+          Credit Card Fraud Detection
+          </h1>
+        </div>
+        <!-- <h2><p style="text-align: center">Detection</p></h2> -->
+      </div>
+    </header>
+    <h2>
+      <b>Result is Here.</b>
+    </h2>
+    <div class="results">
+      {% if prediction == 0 %}
+      <h2>
+          the provided transaction is NOT a Fraud transaction.
+      </h1>
+      {% elif prediction == 1 %}
+      <h2>
+          this transaction is a Fraud transaction.
+      </h2>
+      {% endif %}
+    </div>
+    <a href="/">
+      <button class="btn-info">Retest</button>
+
+    </a>
+  </body>
+</html>
